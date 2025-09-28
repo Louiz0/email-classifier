@@ -9,7 +9,7 @@ sendButton.addEventListener("click", async () => {
   const formData = new FormData();
   formData.append("text", text);
 
-  const response = await fetch("/classify-text", {
+  const response = await fetch("http://127.0.0.1:8000/classify-text", {
     method: "POST",
     body: formData,
   });
@@ -25,7 +25,7 @@ fileInput.addEventListener("change", async (e) => {
   const formData = new FormData();
   formData.append("file", file);
 
-  const response = await fetch("/classify-file", {
+  const response = await fetch("http://127.0.0.1:8000/classify-file", {
     method: "POST",
     body: formData,
   });
