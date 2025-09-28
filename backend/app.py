@@ -27,7 +27,7 @@ app.add_middleware(
 )
 
 classifier = pipeline("zero-shot-classification", 
-                     model="MoritzLaurer/deberta-v3-base-zeroshot-v1.1-all-33",
+                     model="facebook/bart-large-mnli",
                      device=-1)
 
 PRODUCTIVE_KEYWORDS = [
