@@ -13,7 +13,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #3498db 0%, #2c3e5039 100%);
+    background: linear-gradient(135deg, #209ff3 0%, #22426070 100%);
     min-height: 100vh;
 }
 
@@ -24,7 +24,7 @@ body {
     color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: none;
-    width: 50%;
+    width: 70%;
     height: 6rem;
     border-radius: 15px;
     padding: 1rem;
@@ -55,10 +55,17 @@ body {
     }
 }
 
+.right-page-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .right-page-header img {
     filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
     cursor: pointer;
+    height: 2rem;
 }
 
 .right-page-header img:hover {
@@ -76,17 +83,93 @@ body {
 }
 
 .left-page-header h1 {
-font-size: 2rem;
+    font-size: 2rem;
     font-weight: 600;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.right-page-header {
+.main-container {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    gap: 2rem;
+    max-width: 65%;
+    margin: auto;
+    width: 100%;
+}
+
+.main-text {
+    margin-top: 4rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main-text h1{
+    font-size: 3.3rem;
+}
+
+.main-text span {
+    font-size: 1.2rem;
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+.input-fields {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
     gap: 1rem;
 }
 
-#social-icons {
-    height: 2rem;
+.input-fields button {
+    border: none;
+    height: 3.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #209ff3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.input-fields button:hover {
+    background-color: #0984e3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(9, 132, 227, 0.4);
+}
+
+.textarea-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.send-icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    opacity: 1;
+}
+
+.send-icon:hover {
+    transform: scale(1.1);
+}
+
+.input-fields textarea {
+    height: 15rem;
+    border: none;
+    border-radius: 15px;
+    resize: none;
+    padding: 1rem;
+    padding-right: 3rem;
+    width: 100%;
 }

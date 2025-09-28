@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -20,14 +21,31 @@
             </div>
 
             <div class="right-page-header">
-                <img id="social-icons" src="./assets/github.png" alt="GitHub">
-                <img id="social-icons" src="./assets/linkedin.png" alt="LinkedIn">
+                <a href="https://github.com/Louiz0">
+                    <img src="./assets/github.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/luizfelipemantoanifantini/">
+                    <img src="./assets/linkedin.png" alt="LinkedIn">
+                </a>
             </div>
         </div>
     </header>
     <div class="main-container">
-        <button type="submit">Procurar e-mail para envio</button>
-        <textarea name="Enviar corpo do e-mail" id="email-fieldtext"></textarea>
+        <div class="main-text">
+            <h1>Classificaçao instantânea de e-mails com Inteligência Artificial!</h1>
+            <span>Comece enviando o anexo do seu e-mail, ou se preferir, cole o corpo do e-mail no campo de texto abaixo.
+                em seguida veja a mágica acontecer.
+            </span>
+        </div>
+
+        <div class="input-fields">
+            <button type="submit">Enviar anexo do e-mail</button>
+    
+            <div class="textarea-container">
+                <textarea name="Enviar corpo do e-mail" id="email-fieldtext" placeholder="Cole o corpo do e-mail aqui..."></textarea>
+                <img src="./assets/send.png" alt="Enviar" class="send-icon">
+            </div>
+        </div>
     </div>
 </body>
 </html>
