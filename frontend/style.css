@@ -15,6 +15,7 @@
 body {
     background: linear-gradient(135deg, #209ff3 0%, #22426070 100%);
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .page-header {
@@ -184,4 +185,6 @@ body {
     padding: 1rem;
     padding-right: 3rem;
     width: 100%;
+
+    font-size: 1.1rem;
 }
