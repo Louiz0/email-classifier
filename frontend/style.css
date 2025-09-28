@@ -28,7 +28,7 @@ body {
     height: 6rem;
     border-radius: 15px;
     padding: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -125,9 +125,19 @@ body {
     gap: 1rem;
 }
 
-.input-fields button {
+.hidden-input {
+    display: none;
+}
+
+.file-input-container {
+    margin-bottom: 1rem;
+}
+
+.file-label {
+    display: inline-block;
     border: none;
     height: 3.5rem;
+    padding: 0 2rem;
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: bold;
@@ -135,9 +145,11 @@ body {
     background-color: #209ff3;
     cursor: pointer;
     transition: all 0.3s ease;
+    line-height: 3.5rem;
+    text-align: center;
 }
 
-.input-fields button:hover {
+.file-label:hover {
     background-color: #0984e3;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(9, 132, 227, 0.4);

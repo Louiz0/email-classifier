@@ -39,7 +39,10 @@
         </div>
 
         <div class="input-fields">
-            <button type="submit">Enviar anexo do e-mail</button>
+            <div class="file-input-container">
+                <label for="input-file" class="file-label">Enviar o email como anexo</label>
+                <input id="input-file" type="file" accept=".txt,.pdf" class="hidden-input">
+            </div>
     
             <div class="textarea-container">
                 <textarea name="Enviar corpo do e-mail" id="email-fieldtext" placeholder="Cole o corpo do e-mail aqui..."></textarea>
@@ -47,5 +50,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
