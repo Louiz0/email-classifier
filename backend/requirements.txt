@@ -4,3 +4,4 @@ transformers
 torch
 nltk
 pypdf2
+python-multipart
