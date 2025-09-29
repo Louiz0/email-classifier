@@ -8,7 +8,7 @@ A escolha de usar Zero-Shot Classification se da pelo fato do custo financeiro d
 
 * **Classificação por Texto:** Cole o corpo do e-mail em uma caixa de texto e obtenha uma classificação imediata.
 * **Classificação por Arquivo:** Envie e-mails como anexos nos formatos `.txt` ou `.pdf`.
-* **Inteligência Artificial:** Utiliza o modelo `facebook/bart-large-mnli` para classificação *zero-shot* em português, rotulando o conteúdo como "Produtivo" ou "Improdutivo".
+* **Inteligência Artificial:** Utiliza o modelo `MoritzLaurer/deberta-v3-base-zeroshot-v1.1-all-33` para classificação *zero-shot* em português, rotulando o conteúdo como "Produtivo" ou "Improdutivo".
 * **Resposta Automática:** Gera uma resposta sugerida com base na categoria
 * **Pré-processamento:** O backend realiza a tokenização do texto, remove *stopwords* em português e converte para minúsculas antes da classificação, garantindo maior precisão.
 
