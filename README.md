@@ -64,8 +64,8 @@ uvicorn app:app --reload --port 8000
 
 ### 7. Executar o frontend
 
+Abra outro CMD dentro da pasta raiz do projeto que foi clonado do Github. Mantenha o do backend em execução
 ```bash
-cd..
 cd frontend
 python -m http.server 3000
 ```
