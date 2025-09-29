@@ -31,6 +31,8 @@ Certifique-se de ter o Python (versão 3.8+) e o `pip` (gerenciador de pacotes) 
 
 ### 2. Clonar o Repositório
 
+Abra o CMD no diretório desejado e execute os comandos:
+
 ```bash
 git clone <https://github.com/Louiz0/email-classifier.git>
 cd email-classifier
@@ -67,3 +69,4 @@ cd..
 cd frontend
 python -m http.server 3000
 ```
+---
