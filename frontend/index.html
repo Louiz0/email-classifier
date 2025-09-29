@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoU - Classifier</title>
 
-    <link rel="icon" href="./assets/logo.png">
-    <link rel="stylesheet" href="style.css">
+    <!-- Link do icone da página, estilização e fontes do Google -->
+    <link rel="icon" href="./assets/logo.png"> <!-- Icone da página -->
+    <link rel="stylesheet" href="style.css"> <!-- Estilização CSS -->
+    <!-- Import da fonte Alan Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
 </head>
+
 <body>
+    <!-- Header da página contendo logo, titulo e redes sociais, foi dividido em direita e esquerda para melhor organização -->
     <header>
         <div class="page-header">
             <div class="left-page-header">
@@ -20,6 +27,7 @@
                 <h1>AutoU - Classifier</h1>
             </div>
 
+            <!-- Icone de redes sociais -->
             <div class="right-page-header">
                 <a href="https://github.com/Louiz0">
                     <img src="./assets/github.png" alt="GitHub">
@@ -30,10 +38,12 @@
             </div>
         </div>
     </header>
+    <!-- Container principal, contém os textos de apresentação e inputs sendo: anexo (.pdf e .txt) ou textarea -->
     <div class="main-container">
         <div class="main-text">
             <h1>Classificaçao instantânea de e-mails com Inteligência Artificial!</h1>
-            <span>Comece enviando o anexo do seu e-mail, ou se preferir, cole o corpo do e-mail no campo de texto abaixo.
+            <span>Comece enviando o anexo do seu e-mail, ou se preferir, cole o corpo do e-mail no campo de texto
+                abaixo.
                 em seguida veja a mágica acontecer.
             </span>
         </div>
@@ -43,13 +53,16 @@
                 <label for="input-file" class="file-label">Enviar o email como anexo</label>
                 <input id="input-file" type="file" accept=".txt,.pdf" class="hidden-input">
             </div>
-    
+
             <div class="textarea-container">
-                <textarea name="Enviar corpo do e-mail" id="email-fieldtext" placeholder="Cole o corpo do e-mail aqui..."></textarea>
+                <textarea name="Enviar corpo do e-mail" id="email-fieldtext"
+                    placeholder="Cole o corpo do e-mail aqui..."></textarea>
                 <img src="./assets/send.png" alt="Enviar" class="send-icon">
             </div>
         </div>
     </div>
+    <!-- Script para conectar o frontend ao backend -->
     <script src="script.js"></script>
 </body>
+
 </html>
