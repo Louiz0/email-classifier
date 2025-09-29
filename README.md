@@ -70,3 +70,7 @@ cd frontend
 python -m http.server 3000
 ```
 ---
+## Imagem do Sistema
+<img width="1888" height="887" alt="image" src="https://github.com/user-attachments/assets/ad856906-95f8-42e2-a9fe-252f09025df8" />
+---
+
